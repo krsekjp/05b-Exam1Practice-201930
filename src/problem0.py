@@ -25,7 +25,7 @@ def main():
 
 
 ###############################################################################
-# TODO: 2.  READ the green doc-string for the:
+# DONE: 2.  READ the green doc-string for the:
 #   - is_prime
 #   - sum_of_digits
 # functions defined below.  You do NOT need to understand their
@@ -338,7 +338,7 @@ def problem0c(circle, n, window):
       :type window: rg.RoseWindow
     """
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #          Tests have been written for you (above).
     #
     ###########################################################################
@@ -346,7 +346,13 @@ def problem0c(circle, n, window):
     #   renders with a half-second pause after rendering.
     ###########################################################################
     # -------------------------------------------------------------------------
-    circl
+    circle.attach_to(window)
+    window.render(0.5)
+    for k in range(n):
+        circle2 = rg.Circle(rg.Point((circle.center.x+2*circle.radius*(k+1)), circle.center.y), circle.radius)
+        circle2.attach_to(window)
+        window.render(0.5)
+
 
 ###############################################################################
 # Our tests use the following to print error messages in red.
