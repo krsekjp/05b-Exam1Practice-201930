@@ -125,6 +125,7 @@ def problem2a(circle, rectangle, window):
     circle.fill_color = rectangle.outline_color
     window.render()
 
+
 def run_test_problem2b():
     """ Tests the  problem2b   function. """
     print()
